@@ -1,0 +1,21 @@
+{
+"Tools-push":[
+    {"bg":"/assets/images/background/rectangle1.png", "icon": "/assets/images/icons/icon1.svg", "text":"DUE DATE CALCULATOR"},
+    {"bg":"/assets/images/background/rectangle2.png", "icon": "/assets/images/icons/icon2.svg", "text":"BABY NAME GENERATOR"},
+    {"bg":"/assets/images/background/rectangle3.png", "icon": "/assets/images/icons/icon3.svg", "text":"PREGNANCY CALCULATOR"},
+    {"bg":"/assets/images/background/rectangle4.png", "icon": "/assets/images/icons/icon4.svg", "text":"BABY SHOWER"},
+    {"bg":"/assets/images/background/rectangle5.png", "icon": "/assets/images/icons/icon5.svg", "text":"WEIGHT GAIN CALCULATOR"},
+    {"bg":"/assets/images/background/rectangle6.png", "icon": "/assets/images/icons/icon6.svg", "text":"CHINESE GENDER PREDICTOR"},
+    {"bg":"/assets/images/background/rectangle7.png", "icon": "/assets/images/icons/icon7.svg", "text":"GUIDES"},
+    {"bg":"/assets/images/background/rectangle8.png", "icon": "/assets/images/icons/icon8.svg", "text":"BABY DEVELOPMENT MILESTONES"},
+    {"bg":"/assets/images/background/rectangle9.png", "icon": "/assets/images/icons/icon9.svg", "text":"BABY GROWTH CHART"},
+    {"bg":"/assets/images/background/rectangle10.png", "icon": "/assets/images/icons/icon10.svg", "text":"DREAM SLEEP SCHOOL"},
+    {"bg":"/assets/images/background/rectangle11.png", "icon": "/assets/images/icons/icon11.svg", "text":"REGISTRY CHECKLIST"},
+    {"bg":"/assets/images/background/rectangle12.png", "icon": "/assets/images/icons/icon12.svg", "text":"PLANNING CHECKLIST"},
+    {"bg":"/assets/images/background/rectangle13.png", "icon": "/assets/images/icons/icon13.svg", "text":"GAMES"},
+    {"bg":"/assets/images/background/rectangle14.png", "icon": "/assets/images/icons/icon14.svg", "text":"DECORATIONS & INVITATIONS"},
+    {"bg":"/assets/images/background/rectangle15.png", "icon": "/assets/images/icons/icon15.svg", "text":"MONTHIVERSARY PRINTABLES"},
+    {"bg":"/assets/images/background/rectangle16.png", "icon": "/assets/images/icons/icon16.svg", "text":"CHILDBIRTH CLASSES"},
+    {"bg":"/assets/images/background/rectangle17.png", "icon": "/assets/images/icons/icon17.svg", "text":"HOSPITAL BAG CHECKLIST"}    
+    ] 
+}

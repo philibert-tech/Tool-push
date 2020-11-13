@@ -4,19 +4,23 @@ import styled from 'styled-components';
 interface TileProps {
     bgSrc: string;
     iconSrc: string;
+    bgAlt:string;
+    iconAlt:string;
 
 }
 
 const Tile: FunctionComponent<TileProps> = ({
     bgSrc,
     iconSrc,
+    bgAlt,
+    iconAlt,
     children
 
 }) => {
     return (
         <Wrapper>
-            <img className="bg" src={bgSrc} />
-            <div className="icon"><img src={iconSrc} /></div>
+            <img className="bg" src={bgSrc} alt={bgAlt}/>
+            <div className="icon"><img src={iconSrc} alt={iconAlt}/></div>
             <div className="text"><p>{children}</p></div>
         </Wrapper>
     );
@@ -40,27 +44,28 @@ const Wrapper = styled.div`
 }
 
 .icon{
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
     background-color:#fff;
     position :absolute;
-    top:40%;
+    top:35%;
     left:auto;
     z-index:1;
     border: solid 1px teal;
     border-radius:50%;
-    padding:10px;
 }
 
 .icon img{
-    width:100%;
+    width:40px;
+    margin:10px;
 }
 
 .text{
     width:85%;
     margin:auto;
     text-align:center;
-    margin-top:40px;
+    position:relative;
+    margin-top:20px;
 }
 
 .text p{  
@@ -68,6 +73,46 @@ const Wrapper = styled.div`
     font-size:12px;
 }
 
+@media (min-width:700px){   
+    width:150px;
+    
+    .icon{
+        width:65px;
+        height:65px;
+        top:40%;
+    }
+
+    .icon img{
+        width:43px;
+        height:43px;
+    }
+   
+}
+
+@media (min-width:1000px){   
+    width:200px; 
+    
+    .icon{
+        width:90px;
+        height:90px;
+        top:40%;
+  
+    }
+
+    .icon img{
+        width:60px;
+        height:60px;
+    }
+
+    .text{ 
+        width:75%; 
+        margin-top:45px;
+    }
+    .text p{ 
+        font-size:14px;
+    }
+
+}
 `;
 
 

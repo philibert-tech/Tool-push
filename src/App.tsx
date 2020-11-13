@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ToolsPush from './tools push';
+import ToolsPush from './Components/ToolsPush/ToolsPush';
 
 function App() {
   return (

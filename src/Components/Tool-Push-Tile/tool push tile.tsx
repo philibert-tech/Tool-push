@@ -38,6 +38,10 @@ const Wrapper = styled.div`
     align-items: center;
     align-content: space-around;
 
+    :hover{
+        transform:scale(1.1);
+    }
+
 .bg{
     width:100%;
     

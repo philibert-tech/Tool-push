@@ -1,11 +1,20 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
+
+    /**
+    *@bgSrc holds the src attribute of the background image
+    *@iconSrc holds the src attribute of the icon
+    *@bgAlt holds alt attribute for backgroung image
+    *@iconAlt holds alt attribute for icon
+    *@children holds the text
+    */
+
 interface TileProps {
     bgSrc: string;
     iconSrc: string;
-    bgAlt:string;
-    iconAlt:string;
+    bgAlt: string;
+    iconAlt: string;
 
 }
 
@@ -14,13 +23,11 @@ const Tile: FunctionComponent<TileProps> = ({
     iconSrc,
     bgAlt,
     iconAlt,
-    children
-
-}) => {
+    children}) => {
     return (
         <Wrapper>
-            <img className="bg" src={bgSrc} alt={bgAlt}/>
-            <div className="icon"><img src={iconSrc} alt={iconAlt}/></div>
+            <img className="bg" src={bgSrc} alt={bgAlt} />
+            <div className="icon"><img src={iconSrc} alt={iconAlt} /></div>
             <div className="text"><p>{children}</p></div>
         </Wrapper>
     );
@@ -37,6 +44,7 @@ const Wrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
+    cursor:pointer;
 
     :hover{
         transform:scale(1.1);
@@ -78,36 +86,29 @@ const Wrapper = styled.div`
 }
 
 @media (min-width:700px){   
-    width:150px;
-    
+    width:150px;   
     .icon{
         width:65px;
         height:65px;
         top:40%;
     }
-
     .icon img{
         width:43px;
         height:43px;
-    }
-   
+    }  
 }
 
 @media (min-width:1000px){   
-    width:200px; 
-    
+    width:200px;     
     .icon{
         width:90px;
         height:90px;
-        top:40%;
-  
+        top:40%; 
     }
-
     .icon img{
         width:60px;
         height:60px;
     }
-
     .text{ 
         width:75%; 
         margin-top:45px;
@@ -115,11 +116,7 @@ const Wrapper = styled.div`
     .text p{ 
         font-size:14px;
     }
-
 }
 `;
-
-
-
 
 export default Tile;

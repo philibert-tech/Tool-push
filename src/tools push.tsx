@@ -3,17 +3,15 @@ import Tile from './Components/Tool-Push-Tile/tool push tile';
 import Content from './Content/Content.json';
 import styled from 'styled-components';
 
-const ToolsPush = () => {
-    return (
+const ToolsPush = () => (
         <Wrapper>
             {
                 Content["Tools-push"].map((tile,index)=>{
                     return   <Tile key={index} bgSrc={tile.bg} iconSrc={tile.icon} children={tile.text} bgAlt={tile.text} iconAlt={tile.text}/>
                 })
             }
-        </Wrapper>
-    );
-}
+        </Wrapper>  
+);
 
 const Wrapper = styled.div`
 width:95%;
